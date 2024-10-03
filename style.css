@@ -39,6 +39,7 @@ a{
     color: #fff;
 }
 
+/* sidebar style start */
 .nav{
     background-color: #121212;
     border-radius: 1rem;
@@ -129,4 +130,44 @@ a{
     margin-top: 0.5rem;
     height: 2rem;
     width: fit-content;
+}
+
+/* sidebar style end */
+
+.sticky-nav{
+    position: sticky;
+    top: 0;
+    background-color: #121212;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0 1rem 0;
+}
+
+.sticky-nav-icons{
+    margin-left: 0.75rem;
+}
+
+.sticky-nav-options{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-item{
+    margin-right: 1.5rem;
+}
+
+.dark-badge{
+    background-color: #000;
+    color: #fff;
+}
+
+
+
+
+@media (max-width: 1000px){
+    .hide{
+        display: none;
+    }
 }
