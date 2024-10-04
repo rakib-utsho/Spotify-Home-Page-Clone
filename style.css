@@ -33,6 +33,9 @@ body{
     bottom: 0px;
     width: 100%;
     height: 72px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 a{
@@ -143,6 +146,7 @@ a{
     justify-content: space-between;
     align-items: center;
     padding: 1rem 0 1rem 0;
+    z-index: 10;
 }
 
 .sticky-nav-icons{
@@ -214,4 +218,100 @@ a{
     height: 30%;
     border-top: 1px solid white;
     opacity: 0.4;
+}
+
+/* Main Content ends */
+
+/* music player */
+.album{
+    width: 25%;
+    display: flex;
+    align-items: center;
+}
+.mic-img{
+    height: 50px;
+    width: 50px;
+    border-radius: 5px;
+}
+
+.song-info{
+    margin-left: 1rem;
+}
+
+.info-status{
+    display: flex;
+    align-items: center;
+}
+
+.song-title{
+    font-size: 0.85rem;
+    font-weight: 700;
+}
+.artist{
+    font-size: 0.6rem;
+}
+
+.music-info-icon{
+    margin-left: 1rem;
+}
+.music-info-icon i{
+    margin-left: 1rem;
+}
+
+
+.player{
+    width: 50%;
+}
+
+
+.controls{
+    width: 25%;
+}
+
+.controls i{
+    margin-left: 1rem;
+}
+
+.player-control{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.player-control-icon{
+    height: 1rem;
+    margin-right: 1.7rem;
+    opacity: 0.7;
+}
+
+.player-control-icon:hover{
+    opacity: 1;
+}
+
+.playback-bar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.progress-bar{
+    width: 40%;
+    appearance: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.progress-bar::-webkit-slider-runnable-track{
+    background-color: #ddd;
+    border-radius: 100px;
+    height: 0.2rem;
+}
+
+.progress-bar::-webkit-slider-thumb{
+    appearance: none;
+    height: 1rem;
+    width: 1rem;
+    background-color: #1bd760;
+    border-radius: 50%;
+    margin-top: -6px;
 }
